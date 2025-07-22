@@ -1,0 +1,62 @@
+.users.main {
+  & > h1 {
+    text-align: center;
+  }
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    .user-card {
+      width: 100%;
+      max-width: 400px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+      font-family: sans-serif;
+
+      &__image {
+        width: 100%;
+        height: auto;
+        display: block;
+      }
+
+      &__info {
+        padding: 20px;
+      }
+
+      &__name {
+        font-size: 22px;
+        margin: 0;
+      }
+
+      &__email {
+        font-size: 14px;
+        color: #777;
+        margin: 4px 0 10px;
+      }
+
+      &__location {
+        font-size: 14px;
+        color: #555;
+      }
+
+      &__meta {
+        margin: 15px 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        font-size: 13px;
+        color: #333;
+      }
+
+      &__contact {
+        font-size: 13px;
+        color: #333;
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+      }
+    }
+  }
+}

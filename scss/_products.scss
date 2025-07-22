@@ -1,0 +1,36 @@
+.products.main {
+  .wrapper {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    .product-card {
+      max-width: 400px;
+      background: #fff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+      font-family: sans-serif;
+    }
+
+    .product-card__image {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      margin-bottom: 15px;
+    }
+
+    .product-card__info h2 {
+      margin: 0 0 10px;
+    }
+
+    .product-card__info p {
+      margin: 5px 0;
+      font-size: 14px;
+    }
+
+    .reviews ul {
+      padding-left: 18px;
+      font-size: 13px;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.header {
+  background: #000;
+  margin-bottom: 50px;
+  .navbar {
+    color: white;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    &__collection {
+      display: flex;
+      gap: 30px;
+      letter-spacing: 0.7px;
+    }
+    &__link:hover {
+      color: yellow;
+    }
+  }
+}
+
+.navbar__link a.active {
+  color: yellow;
+}
