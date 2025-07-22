@@ -15,9 +15,25 @@
     &__link:hover {
       color: yellow;
     }
+    .bar {
+      display: none;
+    }
   }
 }
 
 .navbar__link a.active {
   color: yellow;
+}
+
+@media (max-width: 650px) {
+  .header {
+    .navbar {
+      &__collection {
+        display: none;
+      }
+      .bar {
+        display: block;
+      }
+    }
+  }
 }
